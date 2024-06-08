@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.w-75 {
+  width: 80%;
+}
+nav {
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007bff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.book-search-page input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.book-card button {
+  background-color: rgb(95, 172, 95);
   color: white;
+  padding: 5px;
+  border: 0 solid white;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.book-card h3 {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.book-card p {
+  margin: 5px 0;
+}
+.bookshelf-page .book-card {
+  margin-right: 15px;
+}
+.bookshelf {
+  display: flex;
+}
+.search-results {
+  display: flex;
 }
